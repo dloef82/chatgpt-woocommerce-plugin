@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: WooCommerce ChatGPT Plugin
+  version: 1.0.0
+paths:
+  /add-to-cart:
+    post:
+      summary: Add a product to the cart
+      operationId: addToCart
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                productId:
+                  type: integer
+                  description: The ID of the product to add to the cart.
+                quantity:
+                  type: integer
+                  description: The quantity of the product to add.
+              required:
+                - productId
+                - quantity
+      responses:
+        200:
+          description: The product was successfully added to the cart.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: A confirmation message.

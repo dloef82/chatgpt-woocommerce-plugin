@@ -1,0 +1,16 @@
+{
+    "name": "WooCommerce ChatGPT Plugin",
+    "description": "A plugin that connects ChatGPT with your WooCommerce store to compile carts based on user input.",
+    "logoUrl": "https://yourdomain.com/logo.png",
+    "auth": {
+      "type": "oauth2",
+      "clientId": "your-client-id",
+      "clientSecret": "your-client-secret",
+      "authorizeUrl": "https://yourdomain.com/oauth2/authorize",
+      "tokenUrl": "https://yourdomain.com/oauth2/token",
+      "refreshUrl": "https://yourdomain.com/oauth2/refresh",
+      "scope": "read_write"
+    },
+    "openApiSpecUrl": "https://yourdomain.com/woocommerce-chatgpt-plugin.yaml"
+  }
+  
